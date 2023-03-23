@@ -1,0 +1,9 @@
+## Task 7
+
+Task 04, which is vacuum cleaning agent, the learning process can be implemented using Q-Learning, where the agent maintains a Q-table that stores the expected cumulative reward for each state-action pair. The Q-table is updated based on the observed reward and the maximum expected cumulative reward for the next state. At the end of the training process, the agent will have learned an optimal policy that allows it to clean the room efficiently, and the path it took can be displayed to show the efficiency of the learning process.
+
+
+Task 05, which is a Tic Tac Toe game, can be transformed into a learning agent by using Reinforcement Learning (RL). The computer agent can learn to play the game optimally by receiving rewards or penalties based on the outcome of each game. For example, the agent can receive a positive reward if it wins the game and a negative reward if it loses. The agent can also receive a reward or penalty based on the moves it makes during the game. By playing multiple games and receiving these rewards, the agent can update its strategy to maximize its rewards over time.
+
+
+Task 06, which is a pathfinding algorithm for minimizing costs on a road trip, can also be transformed into a learning agent using RL. The agent can learn the best route between two nodes by receiving rewards based on the costs of the trip, such as gas and overnight stays. The agent can also receive rewards based on the time it takes to complete the trip and any traffic costs that may arise. Over time, the agent can update its strategy to minimize the overall costs of the trip.
