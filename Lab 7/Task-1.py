@@ -1,4 +1,4 @@
-#Task5
+#Task1
 import numpy as np
 
 board=np.empty(shape=(3,3),dtype=str)
