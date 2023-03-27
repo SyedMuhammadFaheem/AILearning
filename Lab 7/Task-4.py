@@ -10,6 +10,8 @@ def getChar(unique,index):
 def getVal(word,unique):
     result=0
     for letter in word:
+        if result==0 and unique[letter]==0:
+            break
         result=(result*10)+unique[letter]
     return result
 
@@ -19,6 +21,8 @@ def cryptArithmetic(unique,numUsed,index,s1,s2,s3):
         n1=getVal(s1,unique)
         n2=getVal(s2,unique)
         n3=getVal(s3,unique)
+        if (n1 or n2 or n3)==0:
+            return
         if (n1+n2)==n3:
             print(n1,n2,n3)
             check=True
@@ -54,4 +58,4 @@ def cryptArithmeticSolve(s1,s2,s3):
     cryptArithmetic(unique,numUsed,0,s1,s2,s3)
 
 
-cryptArithmeticSolve('BASE','BALL','GAMES')
+cryptArithmeticSolve('CRACK','HACK','ERROR')
