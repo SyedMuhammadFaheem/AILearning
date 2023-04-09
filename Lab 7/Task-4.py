@@ -58,4 +58,4 @@ def cryptArithmeticSolve(s1,s2,s3):
     cryptArithmetic(unique,numUsed,0,s1,s2,s3)
 
 
-cryptArithmeticSolve('CRACK','HACK','ERROR')
+cryptArithmeticSolve('SEND','MORE','MONEY')
