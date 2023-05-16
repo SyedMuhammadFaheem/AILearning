@@ -5,13 +5,13 @@ board=np.empty(shape=(3,3),dtype=str)
 print("User's Character is O || Agent's Character is X")
 def checkWinner():
     global board
-    for i in range(3):
+    for i in range(3): # checking for rows
         if board[i][0]==board[i][1] and board[i][1]==board[i][2]:
             if board[i][0]=='X':
                 return 'X'
             elif board[i][0]=='O':
                 return 'O'
-    for j in range(3):
+    for j in range(3): # checking for cols
         if board[0][j]==board[1][j] and board[1][j]==board[2][j]:
             if board[0][j]=='X':
                 return 'X'
@@ -100,7 +100,8 @@ def minimax(depth,maximize):
                     bestVal=min(bestVal,minimax(depth+1,not maximize))
                     board[i][j]=''
         return bestVal
-        
+
+  
 def makeMove():
     global board
     bestVal=-1000
@@ -117,8 +118,6 @@ def makeMove():
     board[move[0],move[1]]='X'
                 
             
-    
-count=0 
 while True:
     index=int(input("Enter your move (1-9): "))
     row=int((index-1)/3)
