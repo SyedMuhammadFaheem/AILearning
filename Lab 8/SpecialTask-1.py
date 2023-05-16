@@ -1,5 +1,5 @@
 from pomegranate import *
-
+from node import *
 studyTime = Node(DiscreteDistribution({'Low': 0.2, 'Medium': 0.5, 'High': 0.3}), name='studyTime')
 examScore = Node(ConditionalProbabilityTable([
     ['Low', 'Low', 0.3],
